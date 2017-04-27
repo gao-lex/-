@@ -84,7 +84,7 @@ public:
 			for (auto r : g[j].nextArc)
 				if (r.adjVex + cost[r.node] < min)
 					min = float(r.adjVex + cost[r.node]);
-			cost[j] = min;
+			cost[j] = int(min);
 		}
 		return cost[0];
 	}

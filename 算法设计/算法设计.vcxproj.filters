@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\test">
+      <UniqueIdentifier>{46fc7123-cdbf-4c32-bea3-d4f88bcf0140}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">
@@ -20,17 +23,23 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test1.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="test2.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="head.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="test3.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="test1.h">
+      <Filter>头文件\test</Filter>
     </ClInclude>
+    <ClInclude Include="test2.h">
+      <Filter>头文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="test3.h">
+      <Filter>头文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="test4.h">
+      <Filter>头文件\test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="READMD.md" />
   </ItemGroup>
 </Project>

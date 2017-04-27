@@ -146,6 +146,10 @@
     <ClInclude Include="test1.h" />
     <ClInclude Include="test2.h" />
     <ClInclude Include="test3.h" />
+    <ClInclude Include="test4.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="READMD.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
