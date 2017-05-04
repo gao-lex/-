@@ -147,6 +147,7 @@
     <ClInclude Include="test2.h" />
     <ClInclude Include="test3.h" />
     <ClInclude Include="test4.h" />
+    <ClInclude Include="test5.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="READMD.md" />

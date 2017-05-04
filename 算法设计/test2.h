@@ -1,20 +1,17 @@
 #pragma once
 #include"head.h"
 using namespace std;
+bool comparion(const pair<float, float>& l, const pair<float, float>& r);
 class Work
 {
 public:
-	bool operator()(const pair<int, int>& l, const pair<int, int>& r)
-	{
-		return (l.second / l.first) > (r.second / r.first);
-	}
 	Work() {
-		vector<pair<int, int>> temp(dp_map.begin(), dp_map.end());
+		vector<pair<float, float>> temp(dp_map.begin(), dp_map.end());
 		dp_vector = temp;
 	}
 	void Sort()
 	{
-		sort(dp_vector.begin(), dp_vector.end(), Work());
+		sort(dp_vector.begin(), dp_vector.end(), comparion);
 	}
 	void greddy()
 	{
@@ -35,8 +32,12 @@ public:
 			cout << i.first<<"	"<<i.second<<endl;
 		return os;
 	}
-	vector<pair<int, int>> dp_vector;
+	vector<pair<float, float>> dp_vector;
 private:
-	multimap<int, int> dp_map = { {2,100},{1,10} ,{2,15} ,{1,27} };
-	/*vector<pair<int, int>> dp_vector;*/
+	multimap<float, float> dp_map = { {2,100},{1,10} ,{2,15} ,{1,27} };
 };
+
+bool compare(const pair<float, float>& l, const pair<float, float>& r)
+{
+	return (l.second / l.first) > (r.second / r.first);
+}
